@@ -3,6 +3,7 @@ import { resolve } from 'path';
 
 export default defineConfig({
   srcDir: 'src',
+  modules: ['@wxt-dev/module-react'],
   manifest: {
     name: 'Prompt Optimizer Extension',
     description: 'Analyze ambiguous prompts, match prompt engineering frameworks, and auto-fill',

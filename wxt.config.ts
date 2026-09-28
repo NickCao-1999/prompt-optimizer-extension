@@ -3,10 +3,9 @@ import { resolve } from 'path';
 
 export default defineConfig({
   srcDir: 'src',
-  modules: ['@wxt-dev/module-react'],
   manifest: {
-    name: '提示词工程智能适配器',
-    description: '分析模糊提示词，自适应匹配提示词工程框架，智能补全填充',
+    name: 'Prompt Optimizer Extension',
+    description: 'Analyze ambiguous prompts, match prompt engineering frameworks, and auto-fill',
     version: '0.1.0',
     permissions: [
       'storage',
@@ -16,7 +15,6 @@ export default defineConfig({
       'declarativeNetRequestWithHostAccess'
     ],
     host_permissions: [
-      // 宿主页面
       'https://kimi.com/*',
       'https://www.kimi.com/*',
       'https://kimi.moonshot.cn/*',
@@ -25,13 +23,11 @@ export default defineConfig({
       'https://claude.ai/*',
       'https://chat.deepseek.com/*',
       'https://gemini.google.com/*',
-      // API 提供商
       'https://api.z.ai/*',
       'https://api.openai.com/*',
       'https://api.anthropic.com/*',
       'https://api.deepseek.com/*',
       'https://open.bigmodel.cn/*',
-      // 本地 Ollama
       'http://localhost/*',
       'http://127.0.0.1/*'
     ]

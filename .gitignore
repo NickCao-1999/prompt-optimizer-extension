@@ -1,0 +1,10 @@
+node_modules/
+.output/
+.wxt/
+.env
+.env.submit
+.env.*.local
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
